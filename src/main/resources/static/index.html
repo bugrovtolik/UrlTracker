@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Url Tracker</title>
+	<link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/2.3.3-1/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div id="main-content">
+	<form>
+		<label for="connect">WebSocket connection:</label>
+		<button id="connect" type="submit">Connect</button>
+		<button id="disconnect" type="submit" disabled="disabled">Disconnect</button>
+	</form>
+	<hr/>
+	<form>
+		<label for="url">Enter the URL</label>
+		<input type="text" value="https://en.wikipedia.org/wiki/Wikipedia" id="url" placeholder="Your URL here...">
+		<label for="word">and your word</label>
+		<input type="text" value="" id="word" placeholder="Your word here...">
+		<button id="send" type="submit">Send</button>
+	</form>
+	<hr/>
+	<table id="info">
+		<tr>
+			<th>URL</th>
+			<th>Time</th>
+			<th>Found word</th>
+			<th>Code length</th>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

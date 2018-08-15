@@ -1,0 +1,28 @@
+body {
+    background-color: #f5f5f5;
+}
+
+#main-content {
+    max-width: 1400px;
+    padding: 2em 3em;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#info td, #info th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#info {
+	width: 800px;
+	display: none;
+}
+
